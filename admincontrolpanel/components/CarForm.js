@@ -2,40 +2,49 @@ import {useRouter} from "next/router";
 import axios from "axios";
 import {useState} from "react";
 
-export default function ProductForm({
+export default function CarForm({
     _id,
     title:existingTitle,
     description:existingDescription,
     price:existingPrice,
+    images,
 }) {
     const [title,setTitle] = useState(existingTitle || '');
     const [description,setDescription] = useState(existingDescription || '');
     const [price,setPrice] = useState(existingPrice || '');
-    const [goToProducts,setGoToProducts] = useState(false);
+    const [goToCars,setGoToCars] = useState(false);
     const router = useRouter();
-    async function saveProduct(ev) {
+    async function saveCar(ev) {
         ev.preventDefault();
         const data = {title,description,price};
         if (_id) {
             //update
-            await axios.put('/api/products', {...data,_id});
+            await axios.put('/api/cars', {...data,_id});
         } else {
             //create
-            await axios.post('/api/products', data);
+            await axios.post('/api/cars', data);
         }
-        setGoToProducts(true);
+        setGoToCars(true);
     }
-    if (goToProducts) {
-        router.push('/products');
+    if (goToCars) {
+        router.push('/cars');
     }
     return (
-            <form onSubmit={saveProduct}>
-                <label>Product Name</label>
+            <form onSubmit={saveCar}>
+                <label>Car Name</label>
                 <input
                     type="text"
-                    placeholder="product name"
+                    placeholder="car name"
                     value={title}
                     onChange={ev => setTitle(ev.target.value)}/>
+                <label>
+                    Photos
+                </label>
+                <div className="mb-2">
+                    {!images?.length && (
+                        <div>No photos for this car</div>
+                    )}
+                </div>
                 <label>Description</label>
                 <textarea
                     placeholder="description"

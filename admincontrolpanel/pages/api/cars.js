@@ -1,4 +1,4 @@
-import {Product} from "@/models/Product";
+import {Car} from "@/models/Car";
 import {mongooseConnect} from "@/lib/mongoose";
 
 export default async function handle(req, res) {
@@ -7,29 +7,29 @@ export default async function handle(req, res) {
 
     if (method === 'GET') {
         if (req.query?.id) {
-            res.json(await Product.findOne({_id:req.query.id}))
+            res.json(await Car.findOne({_id:req.query.id}))
         } else {
-            res.json(await Product.find());
+            res.json(await Car.find());
         }
     }
 
     if (method === 'POST') {
         const {title,description,price} = req.body;
-        const productDoc = await Product.create({
+        const carDoc = await Car.create({
             title,description,price,
         })
-        res.json(productDoc);
+        res.json(carDoc);
     }
 
     if (method === 'PUT') {
         const {title,description,price,_id} = req.body;
-        await Product.updateOne({_id}, {title,description,price});
+        await Car.updateOne({_id}, {title,description,price});
         res.json(true);
     }
 
     if (method === 'DELETE') {
         if (req.query?.id) {
-            await Product.deleteOne({_id:req.query?.id});
+            await Car.deleteOne({_id:req.query?.id});
             res.json(true);
         }
     }
