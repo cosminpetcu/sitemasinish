@@ -10,17 +10,21 @@ export default function CarForm({
     description:existingDescription,
     price:existingPrice,
     images:existingImages,
+    mileage:existingMileage,
+    year:existingYear,
 }) {
     const [title,setTitle] = useState(existingTitle || '');
     const [description,setDescription] = useState(existingDescription || '');
     const [price,setPrice] = useState(existingPrice || '');
+    const [mileage,setMileage] = useState(existingMileage || '');
+    const [year,setYear] = useState(existingYear || '');
     const [images,setImages] = useState(existingImages || []);
     const [goToCars,setGoToCars] = useState(false);
     const [isUploading,setIsUploading] = useState(false);
     const router = useRouter();
     async function saveCar(ev) {
         ev.preventDefault();
-        const data = {title,description,price,images};
+        const data = {title,description,price,images,mileage,year};
         if (_id) {
             //update
             await axios.put('/api/cars', {...data,_id});
@@ -53,7 +57,7 @@ export default function CarForm({
     }
     return (
             <form onSubmit={saveCar}>
-                <label>Car Name</label>
+                <label>Car Name*</label>
                 <input
                     type="text"
                     placeholder="car name"
@@ -92,7 +96,19 @@ export default function CarForm({
                     placeholder="description"
                     value={description}
                     onChange={ev => setDescription(ev.target.value)}></textarea>
-                <label>Price (in EUR)</label>
+                <label>Year*</label>
+                <input
+                    type="number"
+                    placeholder="year"
+                    value={year}
+                    onChange={ev => setYear(ev.target.value)}/>
+                <label>Mileage*</label>
+                <input
+                    type="number"
+                    placeholder="mileage"
+                    value={mileage}
+                    onChange={ev => setMileage(ev.target.value)}/>
+                <label>Price (in EUR)*</label>
                 <input
                     type="number"
                     placeholder="price"
