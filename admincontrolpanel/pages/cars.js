@@ -23,7 +23,7 @@ export default function Cars() {
                 </thead>
                 <tbody>
                     {cars.map(car => (
-                        <tr>
+                        <tr key={car._id}>
                             <td>{car.title}</td>
                             <td>
                                 <Link href={'/cars/edit/'+car._id}>
