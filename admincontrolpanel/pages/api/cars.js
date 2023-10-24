@@ -14,16 +14,16 @@ export default async function handle(req, res) {
     }
 
     if (method === 'POST') {
-        const {title,description,price,images,mileage,year} = req.body;
+        const {title,description,price,images,mileage,year,category} = req.body;
         const carDoc = await Car.create({
-            title,description,price,images,mileage,year,
+            title,description,price,images,mileage,year,category,
         })
         res.json(carDoc);
     }
 
     if (method === 'PUT') {
-        const {title,description,price,images,mileage,year,_id} = req.body;
-        await Car.updateOne({_id}, {title,description,price,images,mileage,year});
+        const {title,description,price,images,mileage,year,category,_id} = req.body;
+        await Car.updateOne({_id}, {title,description,price,images,mileage,year,category});
         res.json(true);
     }
 

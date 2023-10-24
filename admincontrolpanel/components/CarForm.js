@@ -1,6 +1,6 @@
 import {useRouter} from "next/router";
 import axios from "axios";
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import Spinner from "@/components/Spinner";
 import {ReactSortable} from "react-sortablejs";
 
@@ -12,19 +12,27 @@ export default function CarForm({
     images:existingImages,
     mileage:existingMileage,
     year:existingYear,
+    category:existingCategory,
 }) {
     const [title,setTitle] = useState(existingTitle || '');
     const [description,setDescription] = useState(existingDescription || '');
+    const [category,setCategory] = useState(existingCategory || '');
     const [price,setPrice] = useState(existingPrice || '');
     const [mileage,setMileage] = useState(existingMileage || '');
     const [year,setYear] = useState(existingYear || '');
     const [images,setImages] = useState(existingImages || []);
     const [goToCars,setGoToCars] = useState(false);
     const [isUploading,setIsUploading] = useState(false);
+    const [categories,setCategories] = useState([]);
     const router = useRouter();
+    useEffect(() => {
+        axios.get('/api/categories').then(result => {
+            setCategories(result.data);
+        });
+    }, []);
     async function saveCar(ev) {
         ev.preventDefault();
-        const data = {title,description,price,images,mileage,year};
+        const data = {title,description,price,images,mileage,year,category};
         if (_id) {
             //update
             await axios.put('/api/cars', {...data,_id});
@@ -63,6 +71,14 @@ export default function CarForm({
                     placeholder="car name"
                     value={title}
                     onChange={ev => setTitle(ev.target.value)}/>
+                <label>Category</label>
+                <select value={category}
+                        onChange={ev => setCategory(ev.target.value)}>
+                    <option value="">Uncategorized</option>
+                    {categories.length > 0 && categories.map(c => (
+                        <option key={c._id} value={c._id}>{c.name}</option>
+                    ))}
+                </select>
                 <label>
                     Photos
                 </label>
