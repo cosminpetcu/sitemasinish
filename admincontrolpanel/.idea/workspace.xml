@@ -5,17 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ee2d886-8843-423c-a732-0cbf14142302" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/models/Category.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/api/categories.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/categories.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/CarForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/CarForm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Nav.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Nav.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/Car.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/Car.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/Category.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/Category.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/api/auth/[...nextauth].js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/api/auth/[...nextauth].js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/api/cars.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/api/cars.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/api/categories.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/api/categories.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/api/upload.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/api/upload.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/categories.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/categories.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +35,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="QODANA_PROBLEMS_VIEW_TAB" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
@@ -81,7 +80,8 @@
       <workItem from="1697459908041" duration="6782000" />
       <workItem from="1697635404276" duration="11355000" />
       <workItem from="1697706825916" duration="8992000" />
-      <workItem from="1697983597408" duration="14012000" />
+      <workItem from="1697983597408" duration="26012000" />
+      <workItem from="1698444342806" duration="2416000" />
     </task>
     <servers />
   </component>

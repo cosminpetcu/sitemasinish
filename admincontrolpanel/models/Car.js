@@ -8,6 +8,7 @@ const CarSchema = new Schema({
     year: {type: Number, required: true},
     images: [{type: String}],
     category: {type:mongoose.Types.ObjectId, ref:'Category'},
+    properties: {type:Object},
 });
 
 export const Car = models.Car || model('Car', CarSchema);

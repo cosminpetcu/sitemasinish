@@ -13,10 +13,12 @@ export default function CarForm({
     mileage:existingMileage,
     year:existingYear,
     category:existingCategory,
+    properties:assignedProperties,
 }) {
     const [title,setTitle] = useState(existingTitle || '');
     const [description,setDescription] = useState(existingDescription || '');
     const [category,setCategory] = useState(existingCategory || '');
+    const [productProperties,setProductProperties] = useState(assignedProperties || {});
     const [price,setPrice] = useState(existingPrice || '');
     const [mileage,setMileage] = useState(existingMileage || '');
     const [year,setYear] = useState(existingYear || '');
@@ -32,7 +34,7 @@ export default function CarForm({
     }, []);
     async function saveCar(ev) {
         ev.preventDefault();
-        const data = {title,description,price,images,mileage,year,category};
+        const data = {title,description,price,images,mileage,year,category,properties:productProperties};
         if (_id) {
             //update
             await axios.put('/api/cars', {...data,_id});
@@ -63,6 +65,28 @@ export default function CarForm({
     function updateImagesOrder(images) {
         setImages(images);
     }
+    function setProductProp(propName,value) {
+        setProductProperties(prevState => {
+            const newProductProps = {...prevState};
+            newProductProps[propName] = value;
+            return newProductProps;
+        });
+    }
+
+    const propertiesToFill = [];
+    if (categories.length > 0 && category) {
+        let catInfo = categories.find(({_id}) => _id === category);
+        if(catInfo.properties) {
+            propertiesToFill.push(...catInfo.properties);
+        }
+        while(catInfo?.parent?._id) {
+            const parentCat = categories.find(({_id}) => _id ===
+                catInfo?.parent?._id);
+            propertiesToFill.push(...parentCat.properties);
+            catInfo = parentCat;
+        }
+    }
+
     return (
             <form onSubmit={saveCar}>
                 <label>Car Name*</label>
@@ -79,6 +103,16 @@ export default function CarForm({
                         <option key={c._id} value={c._id}>{c.name}</option>
                     ))}
                 </select>
+                {propertiesToFill.length > 0 && propertiesToFill.map(p => (
+                    <div key={p._id} className="flex gap-1">
+                        <div>{p.name}</div>
+                        <select value={productProperties[p.name]} onChange={ev => setProductProp(p.name,ev.target.value)}>
+                            {p.values.map(v => (
+                                <option key={v._id} value={v}>{v}</option>
+                            ))}
+                        </select>
+                    </div>
+                ))}
                 <label>
                     Photos
                 </label>
