@@ -5,15 +5,41 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ee2d886-8843-423c-a732-0cbf14142302" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/components/Logo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/CarForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/CarForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Nav.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Nav.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/cars.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/cars.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/categories.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/categories.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WebScraper/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WebScraper/.idea/WebScraper.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WebScraper/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WebScraper/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WebScraper/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WebScraper/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WebScraper/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WebScraper/WebScraper.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WebScraper/cars.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/.eslintrc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/.idea/front.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/components/Center.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/components/Featured.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/components/Header.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/jsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/next.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/pages/_app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/pages/_document.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/pages/api/hello.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/pages/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/postcss.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/public/next.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/public/vercel.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/tailwind.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/yarn.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../sitemasinish.rar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +54,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="MarkdownSettingsMigration">
