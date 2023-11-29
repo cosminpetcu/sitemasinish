@@ -5,41 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ee2d886-8843-423c-a732-0cbf14142302" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../WebScraper/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WebScraper/.idea/WebScraper.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WebScraper/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WebScraper/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WebScraper/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WebScraper/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WebScraper/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WebScraper/WebScraper.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WebScraper/cars.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../front/.eslintrc.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../front/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../front/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../front/.idea/front.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../front/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../front/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../front/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../front/components/Center.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../front/components/Featured.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../front/components/Header.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../front/jsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../front/next.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../front/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../front/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../front/pages/_app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../front/pages/_document.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../front/pages/api/hello.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../front/pages/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../front/postcss.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../front/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../front/public/next.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../front/public/vercel.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../front/tailwind.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../front/yarn.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../sitemasinish.rar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/components/Button.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/components/ButtonLink.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/components/CarBox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/components/CarImages.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/components/CarsGrid.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/components/NewCars.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/components/Title.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/components/WhiteBox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/lib/mongoose.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/models/Car.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/pages/car/[id].js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/pages/cars.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/Car.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/Car.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/components/Featured.js" beforeDir="false" afterPath="$PROJECT_DIR$/../front/components/Featured.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/../front/components/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../front/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/../front/pages/_app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../front/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../front/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,6 +98,11 @@
       <workItem from="1697706825916" duration="8992000" />
       <workItem from="1697983597408" duration="26012000" />
       <workItem from="1698444342806" duration="8680000" />
+      <workItem from="1698849202418" duration="716000" />
+      <workItem from="1699005638732" duration="709000" />
+      <workItem from="1700252068707" duration="623000" />
+      <workItem from="1700999493816" duration="599000" />
+      <workItem from="1701030396686" duration="2410000" />
     </task>
     <servers />
   </component>

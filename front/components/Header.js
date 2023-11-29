@@ -33,8 +33,6 @@ export default function Header() {
                     <StyledNav>
                         <NavLink href={'/'}>Home</NavLink>
                         <NavLink href={'/cars'}>All cars</NavLink>
-                        <NavLink href={'/categories'}>Categories</NavLink>
-                        <NavLink href={'/account'}>Account</NavLink>
                     </StyledNav>
                 </Wrapper>
             </Center>

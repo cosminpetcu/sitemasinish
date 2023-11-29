@@ -1,5 +1,7 @@
 import Center from "@/components/Center";
 import styled from "styled-components";
+import Button from "@/components/Button";
+import ButtonLink from "@/components/ButtonLink";
 
 const Bg = styled.div`
   background-color: #222;
@@ -10,6 +12,7 @@ const Bg = styled.div`
 const Title = styled.h1`
   margin: 0;
   font-weight: normal;
+  font-size: 3rem;
 `;
 
 const Desc = styled.p`
@@ -17,33 +20,44 @@ const Desc = styled.p`
   font-size: .8rem;
 `;
 
-const Wrapper = styled.div`
+const ColumnsWrapper = styled.div`
   display: grid;
-  grid-template-columns: .8fr 1.2fr;
+  grid-template-columns: 1.1fr 0.9fr;
   gap: 40px;
   img{
     max-width: 100%;
   }
 `;
 
-export default function Featured() {
+const Column = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
+const ButtonsWrapper = styled.div`
+  display: flex;
+  gap:10px;
+  margin-top: 25px;
+`
+
+export default function Featured({car}) {
     return (
         <Bg>
             <Center>
-                <Wrapper>
-                    <div>
-                        <h1>Pro anywhere</h1>
-                        <Desc>
-                            -Posibilitate finantare leasing persoane juridice dobanda 7.70%
-                            -Avans 20%- 17871 Euro TVA inclus contract 60 luni, Rata lunara 1307 Euro TVA inclus, 230 Euro rata lunara CASCO
-                            -FARA valoare reziduala, este inclusa in rate
-                            -Se emite factura cu tva deductibil
-                        </Desc>
-                    </div>
-                    <div>
-                        <img src="https://next-masinish.s3.amazonaws.com/1698244229615.jpeg" alt=""/>
-                    </div>
-                </Wrapper>
+                <ColumnsWrapper>
+                    <Column>
+                        <div>
+                            <Title>{car.title}</Title>
+                            <Desc>{car.description}</Desc>
+                            <ButtonsWrapper>
+                                <ButtonLink href={'/car/' + car._id} white={1} outline={1}>Read more</ButtonLink>
+                            </ButtonsWrapper>
+                        </div>
+                    </Column>
+                    <Column>
+                        <img src="https://next-masinish.s3.amazonaws.com/1701224453018.png" alt=""/>
+                    </Column>
+                </ColumnsWrapper>
             </Center>
         </Bg>
     );
