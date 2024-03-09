@@ -5,27 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ee2d886-8843-423c-a732-0cbf14142302" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../front/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../front/components/Button.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../front/components/ButtonLink.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../front/components/CarBox.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../front/components/CarImages.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../front/components/CarsGrid.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../front/components/NewCars.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../front/components/Title.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../front/components/WhiteBox.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../front/lib/mongoose.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../front/models/Car.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../front/pages/car/[id].js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../front/pages/cars.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/Car.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/Car.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front/components/Featured.js" beforeDir="false" afterPath="$PROJECT_DIR$/../front/components/Featured.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/../front/components/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../front/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/../front/pages/_app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../front/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../front/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/.env" beforeDir="false" afterPath="$PROJECT_DIR$/../front/.env" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,6 +85,7 @@
       <workItem from="1700252068707" duration="623000" />
       <workItem from="1700999493816" duration="599000" />
       <workItem from="1701030396686" duration="2410000" />
+      <workItem from="1710020978860" duration="257000" />
     </task>
     <servers />
   </component>
